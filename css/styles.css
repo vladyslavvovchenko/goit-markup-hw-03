@@ -238,6 +238,10 @@ ul {
   outline: 2px solid olivedrab;
 }
 
+.section-pad {
+  padding: 94px 0;
+}
+
 /* хедер */
 
 .box {
@@ -292,7 +296,6 @@ ul {
 
 .description {
   display: flex;
-  padding: 94px 0;
   justify-content: space-between;
 }
 
@@ -301,6 +304,7 @@ ul {
 }
 
 /* чем мы занимаемся */
+
 .section-title {
   display: block;
   width: 376px;
@@ -329,7 +333,6 @@ img {
 
 .team-title {
   text-align: center;
-  padding-top: 94px;
   margin-bottom: 50px;
 }
 
@@ -339,10 +342,11 @@ img {
   padding: 0;
 }
 
-.peoples-item {
+.card {
   width: 270px;
   text-align: center;
   outline: 2px solid blue;
+  border-radius: 0px 0px 4px 4px;
 }
 
 .names {
@@ -351,4 +355,23 @@ img {
 
 .title {
   margin-bottom: 10px;
+}
+/* футер */
+
+.logo-dn {
+  width: 145px;
+}
+
+.address {
+  border: 231px 0;
+  margin-top: 20px;
+  padding: 0;
+}
+
+.address-dn:not(:last-child) {
+  margin-bottom: 9px;
+}
+
+.footer-pad {
+  padding: 60px 0;
 }
