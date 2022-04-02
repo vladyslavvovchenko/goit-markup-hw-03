@@ -30,8 +30,8 @@ ul {
 
 .container {
   align-items: center;
-  width: 1230px;
   padding: 0 15px;
+  width: 1200px;
   margin: 0 auto;
   /* outline: 2px solid olivedrab; */
 }
@@ -47,7 +47,6 @@ body {
 
 .header {
   background-color: #2F303A;
-  max-width: 1600px;
   margin-left: auto;
   margin-right: auto;
   background-color: var(--primery-white-color);
@@ -177,14 +176,6 @@ padding: 32px 0;
   letter-spacing: 0.06em;
 }
 
-/* main */
-
-.main{
-  max-width: 1600px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
 /* section */
 
 .section {
@@ -210,6 +201,7 @@ padding: 32px 0;
 }
 
 .description .title {
+  margin-bottom: 10px;
   color: var(--second-text-coor);
   font-weight: bold;
   font-size: 14px;
@@ -297,7 +289,6 @@ img {
 
 .footer {
   background-color: #2F303A;
-  max-width: 1600px;
   margin-left: auto;
   margin-right: auto;
   padding: 60px 0;
