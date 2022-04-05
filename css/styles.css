@@ -110,6 +110,8 @@ body {
 
 /* contacts */
 
+
+
 .contacts {
   display: flex;
   margin-left: auto;
@@ -120,11 +122,12 @@ padding: 32px 0;
 }
 
 .contacts-item:not(:last-child) {
-  margin-right: 50px;
+  margin-right: 30px;
 }
 
 .contacts .link {
   color: var(--primary-text-color);
+  fill: #757575;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -132,14 +135,23 @@ padding: 32px 0;
   text-decoration: none;
 }
 
-.contacts .link:hover,
-.contacts .link:focus {
+.contacts-item .link:hover,
+.contacts-item .link:focus {
   color: var(--accent-hover-color);
+}
+
+.contacts-item .link:hover,
+.contacts-item .link:focus{
+fill: var(--accent-hover-color);
+}
+
+.contact-icons {
+  margin-right: 10px;
 }
 
 /* hero */
 
-.hero{
+.hero {
   background-color: #2F303A;
   padding: 200px 0;
   background-image: linear-gradient(rgba(47, 48, 58, 0.4),rgba(47, 48, 58, 0.4)), url(../images/hero.jpg);
@@ -205,6 +217,14 @@ padding: 32px 0;
 .description-items {
   width: 270px;
 }
+
+.bg-description-icons{
+  background-color: #F5F4FA;
+  height: 120px;
+  padding: 25px 100px;
+  margin-bottom: 30px; 
+}
+
 
 .description .title {
   margin-bottom: 10px;
@@ -274,21 +294,50 @@ img {
 .card {
   width: 270px;
   text-align: center;
+  padding-bottom: 30px;
   border-radius: 0px 0px 4px 4px;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
+  0px 1px 1px rgba(0, 0, 0, 0.14),
+  0px 2px 1px rgba(0, 0, 0, 0.2);
   /* outline: 2px solid blue; */
 }
 
-.names {
-  padding: 30px 0;
-}
 
 .peoples-title {
   color: var(--second-text-coor);
-  margin-bottom: 10px;
+  margin-top: 30px;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.18;
   text-align: center;
+}
+.profession{
+  margin-top: 10px;
+}
+
+.social-networks {
+ outline: 2px solid blue; 
+display: flex;
+margin-top: 16px;
+margin-right: auto;
+margin-left: auto;
+justify-content: space-between;
+width: 206px;
+}
+
+.social-link {
+  border-radius: 50%;
+  padding: 12px;
+  display: block;
+  width: 44px;
+  height: 44px;
+  outline: 2px solid red;
+  fill: #AFB1B8;
+}
+
+.social-link:hover {
+  background-color: var(--accent-hover-color);
+  fill: var(--primery-white-color);
 }
 
 /* footer */
@@ -300,6 +349,10 @@ img {
   padding: 60px 0;
   font-size: 14px;
   line-height: 1.71;
+}
+
+.footer-flex{
+  display: flex;
 }
 
 .logo-dn {
@@ -335,6 +388,33 @@ img {
 .address .link-contacts:hover,
 .address .link:focus {
   color: var(--accent-hover-color);
+}
+
+.join{
+  width: 206px;
+  margin-left: 70px;
+  padding-top: 12px;
+  padding-bottom: 40px;
+}
+
+.social-networks-footer{
+  display: flex;
+  justify-content: space-between;
+}
+
+.social-link-footer{
+  display: block;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 12px;
+  fill:var(--primery-white-color);
+}
+
+.social-link-footer:hover,
+.social-link-footer:focus{
+  background-color: var(--accent-hover-color);
 }
 
 /* основний колір тексту #757575 */
