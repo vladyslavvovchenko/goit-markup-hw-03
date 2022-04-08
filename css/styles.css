@@ -404,7 +404,7 @@ img {
 }
 
 .services:nth-child(3n) {
-  margin-left: 0;
+  margin-right: 0;
 }
 
 .services:nth-last-child(-n + 3) {
