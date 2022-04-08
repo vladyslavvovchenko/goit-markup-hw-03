@@ -114,6 +114,7 @@ body {
 
 .contacts {
   display: flex;
+  align-items: baseline;
   margin-left: auto;
 }
 
@@ -219,9 +220,11 @@ fill: var(--accent-hover-color);
 }
 
 .bg-description-icons{
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background-color: #F5F4FA;
   height: 120px;
-  padding: 25px 100px;
   margin-bottom: 30px; 
 }
 
@@ -294,6 +297,7 @@ img {
 .card {
   width: 270px;
   text-align: center;
+  background-color: var(--primery-white-color);
   padding-bottom: 30px;
   border-radius: 0px 0px 4px 4px;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
@@ -316,7 +320,7 @@ img {
 }
 
 .social-networks {
- outline: 2px solid blue; 
+/* outline: 2px solid blue;  */
 display: flex;
 margin-top: 16px;
 margin-right: auto;
@@ -331,13 +335,46 @@ width: 206px;
   display: block;
   width: 44px;
   height: 44px;
-  outline: 2px solid red;
+  /* outline: 2px solid red; */
   fill: #AFB1B8;
 }
 
 .social-link:hover {
   background-color: var(--accent-hover-color);
   fill: var(--primery-white-color);
+}
+
+/* постоянные клиенты */
+
+.company-title{
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  color: var(--second-text-coor);
+  margin-bottom: 50px;
+}
+
+.company-list{
+  display: flex;
+  justify-content: space-between;
+ }
+
+.company-link{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 170px;
+  height: 92px;
+  fill: #AFB1B8;
+  border: 1px solid #AFB1B8;
+  border-radius: 4px;
+}
+
+.company-link:hover,
+.company-link:focus{
+  fill: var(--accent-hover-color);
+  border: 1px solid var(--accent-hover-color);
 }
 
 /* footer */
@@ -395,6 +432,14 @@ width: 206px;
   margin-left: 70px;
   padding-top: 12px;
   padding-bottom: 40px;
+}
+
+.join-title{
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.14;
+  color: var(--primery-white-color);
+  margin-bottom: 20px;
 }
 
 .social-networks-footer{
